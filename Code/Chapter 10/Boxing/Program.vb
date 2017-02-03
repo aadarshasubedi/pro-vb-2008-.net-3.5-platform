@@ -4,8 +4,7 @@ Option Strict On
 ' Structures are value types!
 Structure MyPoint
   Public x, y As Integer
-End Structure
-
+End StructureA 
 Module Program
 
   Sub Main()
@@ -19,7 +18,11 @@ Module Program
     ' method prototyped to take an Object,
     ' it is 'boxed' automatically.
     UseThisObject(s)
-
+ 
+    'Initializes a new instance of the ArrayList class that is empty and has the default initial capacity.
+    'The capacity of an ArrayList is the number of elements that the ArrayList can hold. As elements are added to an ArrayList, the capacity is automatically increased as required by reallocating the internal array.
+    'If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the ArrayList.
+    'This constructor is an O(1) operation.
     Dim myData As New ArrayList()
     myData.Add(88)
     myData.Add(3.33)
